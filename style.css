@@ -15,10 +15,27 @@ h2,
 h3,
 h4 {
     font-weight: bold;
+    font-size: clamp(12px, 4vw, 32px);
 }
 
 ul li {
     border: none !important;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 /*Containers*/
@@ -92,6 +109,7 @@ ul li {
 
 .w3-margin-top-2 {
     margin-top: 32px;
+    text-align: justify;
 }
 
 .w3-margin-top-4 {
